@@ -17,28 +17,28 @@
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U  |  I  |  O  |  P  | BKSP |
 // | NAVG |  A  |  S  |  D  |  F  |  G  |   |  H  |  J  |  K  |  L  |  ;  |  '   |
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M  |  ,  |  .  |  /  | SHFT |
-//                    | MTA | ALT | SPC |   | RSE | ENT | CTL |
+//                    | CTL | ALT | SPC |   | RSE | ENT | MTA |
                         display-name = "Base";
                         bindings = <
    &kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T           &kp Y     &kp U     &kp I     &kp O     &kp P     &kp BSPC
    &mo 2     &kp A     &kp S     &kp D     &kp F     &kp G           &kp H     &kp J     &kp K     &kp L     &kp SEMI  &kp SQT
    &kp LSHFT &kp Z     &kp X     &kp C     &kp V     &kp B           &kp N     &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp RSHFT
-                                 &kp LCTRL &kp LALT  &kp SPACE       &mo 1     &kp RET  &kp RMETA 
+                                 &kp LCTRL &kp LALT  &kp SPACE       &mo 1     &kp RET  &kp LMETA 
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |   ~  |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | "|"  |
-// |  ESC |  `  |  _  |  (  |  )  |  -  |   |  +  |  [  |  ]  |  =  |  \  | ENT  |
+// |  ESC |  `  |  -  |  _  |  (  |  [  |   |  ]  |  )  |  =  |  +  |  \  | ENT  |
 // | SHFT | F2  | F3  | F4  | F5  | F6  |   | F7  | F8  | F9  | F10 | F11 | SHFT |
-//                    | MTA | ALT | CTL |   |     | F1  | F12 |
+//                    | CTL | ALT | MTA |   |     | F1  | F12 |
                         display-name = "Raise";
                         bindings = <
    &kp TILDE &kp N1    &kp N2    &kp N3    &kp N4    &kp N5          &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp PIPE
-   &kp ESC   &kp GRAVE &kp UNDER &kp LPAR  &kp RPAR  &kp MINUS       &kp PLUS  &kp LBKT  &kp RBKT  &kp EQUAL &kp BSLH  &kp RET
+   &kp ESC   &kp GRAVE &kp MINUS &kp UNDER &kp LPAR  &kp LBKT        &kp RBKT  &kp RPAR  &kp EQUAL &kp PLUS  &kp BSLH  &kp RET
    &kp LSHFT &kp F2    &kp F3    &kp F4    &kp F5    &kp F6          &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp RSHFT
-                    	         &kp LMETA &kp LALT  &kp LCTRL       &trans    &kp F1    &kp F12
+                    	         &kp RCTRL &kp RALT  &kp RMETA       &trans    &kp F1    &kp F12
                         >;
                 };
 
